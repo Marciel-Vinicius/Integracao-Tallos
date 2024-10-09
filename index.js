@@ -7,11 +7,20 @@ function clientes_tallos() {
         },
         body: JSON.stringify({
             "full_name": "Marciel Vinicius de Lara",
-            "cel_phone": "+55 49 999509185 ",
+            "cel_phone": "+55 49 999509185",
             "integration": "integration-1",
             "email": "marcielviniciusdelara@gmail.com",
             "cpf": "012.386.599-93",
             "cnpj": "",
+            "address": {
+                "country": "Brazil",
+                "state": "Santa Catarina",
+                "city": "Princesa",
+                "district": "Centro",
+                "street": "Rua Rio Grande do Sul",
+                "number": "123",
+                "zip_code": "89935-000",
+            },
         })
     }).then(response => {
         response.json().then(data => {
